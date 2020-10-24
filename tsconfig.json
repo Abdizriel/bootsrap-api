@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["es7", "esnext.asynciterable"],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    // "rootDir": "src",
+    "outDir": "dist",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      // "*": ["node_modules/*", "src/types/*"],
+      "@entities/*": ["entities/*"],
+      "@providers/*": ["providers/*"],
+      "@domains/*": ["domains/*"],
+      "@repositories/*": ["repositories/*"],
+      "@internalTypes/*": ["internalTypes/*"],
+      "@config/*": ["config/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

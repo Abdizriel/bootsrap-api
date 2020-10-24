@@ -1,0 +1,18 @@
+[
+  {
+    "type": "postgres",
+    "host": "localhost",
+    "database": "postgres",
+    "username": "postgres",
+    "password": "postgres",
+    "entities": ["src/entities/*.ts"],
+    "migrationsTableName": "database_migration",
+    "migrations": ["src/migrations/*.ts"],
+    "cli": {
+      "migrationsDir": "src/migrations"
+    },
+    "cache": {
+      "tableName": "database_cache"
+    }
+  }
+]
